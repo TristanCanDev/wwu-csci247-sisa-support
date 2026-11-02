@@ -1,0 +1,48 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "SISA",
+	"patterns": [
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name":"constant.numeric.sisa",
+					"match":"\\b[-]?[0-9]+\\b"
+				},
+				{
+					"name":"storage.type.sisa",
+					"match":"\\b(WORD)\\b"
+				},
+				{
+					"name":"storage.type.sisa",
+					"match":"\\.(data|code)\\b"
+				},
+				{
+					"name": "keyword.operator.word.arithmetic.sisa",
+					"match": "\\b(ADD|SUB|MUL|DIV|ADDI)\\b"
+				},
+				{
+					"name": "keyword.control.data.assembly.sisa",
+					"match": "\\b(LDWI|LDW|STW)\\b"
+				},
+				{
+					"name":"keyword.control.jump.assembly.sisa",
+					"match": "\\b(BE|BNE|BL|BG|BLE|BGE|B|JAL|JLR)\\b"
+				},
+				{
+					"name":"variable.language.register.assembly.sisa",
+					"match":"\\bR(1[0-5]|[0-9])\\b"
+				},
+				{
+					"name":"keyword.control.sisa",
+					"match":"\\b(HALT)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.sisa"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "wwu-csci247-sisa-support",
+  "displayName": "WWU_CSCI247_SISA_SUPPORT",
+  "description": "Adds support for the SISA assembly language included in Michael Koepp's CSCI247 class at Western Washington University",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.144.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sisa",
+      "aliases": ["SISA", "sisa"],
+      "extensions": [".aci"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sisa",
+      "scopeName": "source.sisa",
+      "path": "./syntaxes/sisa.tmLanguage.json"
+    }]
+  }
+}
