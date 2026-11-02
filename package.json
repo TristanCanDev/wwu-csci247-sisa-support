@@ -1,5 +1,7 @@
 {
   "name": "wwu-csci247-sisa-support",
+  "publisher": "TristanBouchard",
+  "repository": "https://github.com/TristanCanDev/wwu-csci247-sisa-support/blob/master/vsc-extension-quickstart.md",
   "displayName": "WWU_CSCI247_SISA_SUPPORT",
   "description": "Adds support for the SISA assembly language included in Michael Koepp's CSCI247 class at Western Washington University",
   "version": "0.0.1",
